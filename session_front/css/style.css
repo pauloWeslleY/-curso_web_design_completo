@@ -1,0 +1,38 @@
+/* Style */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    margin: auto;
+    background-color: #f7f5f2;
+    color: #444;
+}
+
+.tittle {
+    background-color: #7f8c8d;
+    text-align: center;
+    border: none;
+    color: #2c3e50;
+    font-size: 35px;
+    padding: 5px;
+}
+
+.subtitle{
+    background-color: #e74c3c;
+    color: #5C0707;
+    border-bottom: 3px solid #5c0707;
+    padding: 8px;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.lista{
+    padding-left: 0;
+    list-style-position: inside;
+}
