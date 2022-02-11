@@ -16,7 +16,6 @@ let phrase = "the \"html\" big";
 // alert(phrase);
 
 var test = null;
-// debugger;
 alert(test);
 
 nmr = 20;

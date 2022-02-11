@@ -11,7 +11,6 @@ myFnc.test = 'property function';
 console.log(myFnc.test);
 
 let test = function(fnc) {
-   // console.log(`Test ${name}`);
    fnc();
 };
 
@@ -41,4 +40,3 @@ console.log(`show Y out: ${y}`);
 })()
 
 console.log(isValid);
-
