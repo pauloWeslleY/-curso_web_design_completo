@@ -1,5 +1,5 @@
 /*
-   ?Aula 228!!!
+   ?Aula 228! <==
 */
 // NOTE: function literal
 function calc(n1, n2) {
