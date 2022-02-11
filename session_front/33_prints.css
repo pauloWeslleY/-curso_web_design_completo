@@ -1,10 +1,10 @@
-body{
+body {
 	font-family: serif;
 	font-size: 16px;
 	color: black;
 }
 
-a:after{
+a:after {
 	content: attr(href);
 	display: inline-block;
 	margin: 0 10px;
