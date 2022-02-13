@@ -40,3 +40,24 @@ showX();
 
 console.log(`show X out: ${x}`);
 console.log(`show Y out: ${y}`);
+
+//! IIFE ==> Immediately-invoked function expression
+(function () {
+   'use strict';
+   var isValid = false;
+   console.log(isValid);
+
+   function calculator() {
+      console.log(arguments);
+      var result = 0;
+      var x = 0;
+      while (arguments[x]) {
+         //! result = result + arguments[x];
+         result += arguments[x];
+         x++;
+      }
+      console.log(`result: ${result}`);
+   }
+
+   calculator(20, 20, 10, 5, 5, 15);
+})();
