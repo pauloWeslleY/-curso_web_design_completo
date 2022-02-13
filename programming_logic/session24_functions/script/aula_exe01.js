@@ -61,6 +61,11 @@ console.log('<== <= === >= ==>');
 (function () {
    function calculatorIMC(w, h, callback) {
       let imc = w / (h * h);
+      if (callback && typeof callback === 'function') {
+         return callback(imc);
+      }
+      console.log('not passed callback!');
+      return imc;
    }
 
    function classIMC(imc) {
@@ -83,8 +88,7 @@ console.log('<== <= === >= ==>');
 
    let weight = 65;
    let height = 1.75;
-
-   let imc = calculatorIMC(weight, height, classIMC);
+   let imc = calculatorIMC(weight, height);
    console.log(imc);
    // let classification = classIMC(imc);
    console.log(`classification IMC: ${imc}`);
