@@ -1,6 +1,6 @@
 /*
    *
-   ! ==> AULA 232 >= exercicio
+   !==> AULA 232 >= exercicio
    *
 */
 
@@ -24,7 +24,7 @@
 console.log('<== <= === >= ==>');
 /*
    *
-   todo ==> Exercicio >= 02
+   fixme ==> Exercicio >= 02
    *
 */
 
@@ -54,7 +54,7 @@ console.log('<== <= === >= ==>');
 console.log('<== <= === >= ==>');
 /*
    *
-   todo ==> Resolução do Exercicio >= 02
+   fixme ==> Resolução do Exercicio >= 02
    *
 */
 
