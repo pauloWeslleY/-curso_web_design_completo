@@ -9,6 +9,8 @@ console.log(new Boolean(true));
 var arr = new Array(1, 2, 3);
 console.log(arr);
 let obj = new Object();
-obj.title = 'tittle';4
+obj.title = 'tittle';
 
 console.log(obj);
+// line
+console.log('<== <= === >= ==>');
