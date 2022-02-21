@@ -28,7 +28,6 @@ console.log('<== <= === >= ==>');
       var lineStudents = trs[x];
       var tds = lineStudents.querySelectorAll('td');
       var notes = recoveryNumbers(tds);
-
       var average = calcAverage.apply(this, notes);
       lineStudents.querySelector('.students-m').textContent = average;
       x++;
