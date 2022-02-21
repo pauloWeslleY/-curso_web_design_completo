@@ -22,18 +22,24 @@
 // line
 console.log('<== <= === >= ==>');
 
-function Pen(price, color2) {
-   var colorY = color2 || 'black';
-   this.price = price || 1;
-   this.changeColor = function (colorX) {
-      if (colorX !== 'red' && colorX !== 'blue' && colorX !==  'black') {
-         return;
+var Pen = (function (window) {
+   'use strict';
+   console.log(this);
+   function _pen(price, color2) {
+      // private
+      var colorY = color2 || 'black';
+      // public
+      this.price = price || 1;
+      this.changeColor = function (colorX) {
+         if (colorX !== 'red' && colorX !== 'blue' && colorX !==  'black') {
+            return;
+         }
+         colorY = colorX;
       }
-      colorY = colorX;
+      this.takeColor = function(){
+         return colorY;
+      }
    }
-   this.takeColor = function(){
-      return colorY;
-   }
-}
+   return _pen;
+})(window)
 
-const penOne = new Pen(3.5, 'red');
