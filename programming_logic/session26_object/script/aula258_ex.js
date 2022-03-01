@@ -25,7 +25,9 @@ for (let i = 0; i <= 2; i++) {
 
 /*
 
-   ! Resolução do Desafio |> AULA 258
+   *
+   Resolução do Desafio |> AULA 258
+   *
 
 */
 console.log('<== <= === >= ==>');
