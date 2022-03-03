@@ -9,6 +9,12 @@ function handle_Click() {
    }
 }
 
+/*
+
+   * |> Aula 260 JS
+
+*/
+
 btn3.addEventListener('click', function () {
    alert('handleClick');
 });
