@@ -1,19 +1,22 @@
 (function () {
    'use strict';
+   var $form = document.querySelector('form');
    var $txtUser = document.getElementById('txtUser');
    var $txtPassword = document.getElementById('txtPassword');
    var $button = document.getElementById('formButton');
 
-   $button.addEventListener('click', () => {
+   $form.addEventListener('submit', (e) => {
       if ($txtUser.value === "" || $txtPassword.value === "") {
          alert('Fill in all fields', 'danger');
+         e.preventDefault();
       }
    });
+   // console.log();
 
    var alertPlaceholder = document.getElementById('liveAlertPlaceholder');
 
    function alert(message, type) {
-      var wrapper = document.createElement('div')
+      var wrapper = document.createElement('div');
       wrapper.innerHTML = `
          <div class="alert alert-${type} alert-dismissible" role="alert">
          ${message}
