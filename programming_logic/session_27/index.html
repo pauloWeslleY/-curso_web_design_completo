@@ -25,8 +25,17 @@
 
       <div class="container">
          <div class="row">
-            <textarea id="message" cols="50" rows="10"></textarea>
-            Characters <span id="rest"></span> Remain
+            <textarea
+               id="message"
+               cols="50"
+               rows="10"
+               maxlength="10"
+            ></textarea>
+         </div>
+         <div class="row">
+            <p id="restRow" style="display: none">
+               Characters <span id="rest"></span> Remain
+            </p>
          </div>
       </div>
 

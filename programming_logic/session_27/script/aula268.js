@@ -1,14 +1,16 @@
 (function () {
    'use strict';
 
-   let maximum = 100;
-
+   let $restRow = document.getElementById('restRow');
    let $txtMsg = document.getElementById('message');
    let $rest = document.getElementById('rest');
-   $txtMsg.addEventListener('input', checkLength);
-   $rest.textContent = maximum;
+   let maximum = $txtMsg.maxLength;
 
-   function checkLength(e) {
+   $restRow.style.display = 'block';
+   $rest.textContent = maximum;
+   $txtMsg.addEventListener('input', checkLength);
+
+   function checkLength(event) {
       let nmrLetterTyping = this.value.length;
       $rest.textContent = maximum - nmrLetterTyping;
    }
