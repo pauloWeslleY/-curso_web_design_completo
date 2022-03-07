@@ -5,6 +5,7 @@
    'use strict';
 
    let ul = document.querySelector('ul');
+   let lis = document.querySelectorAll('li');
    let inputTask = document.querySelector('#inputTask');
    let btn = document.querySelector('#btn');
 
@@ -15,32 +16,21 @@
       };
    });
 
+   for (let i = 0; i < lis.length; i++) {
+      lis[i].addEventListener('click', toggleDone);
+   }
+
    function addTask() {
       let task = `<li class="list-group-item">${inputTask.value}</li>`;
       ul.innerHTML += task;
       inputTask.value = "";
       inputTask.focus();
    }
+
+   function toggleDone() {
+      debugger
+   }
 })()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // end line
 console.log('|>-------------------------------------------------<|');
