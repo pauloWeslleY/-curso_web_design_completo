@@ -1,4 +1,4 @@
-(function () {
+(() => {
    let html = document.querySelector('html');
    let btn = document.querySelector('.header-nav__hamburgger');
 
