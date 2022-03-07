@@ -28,7 +28,7 @@
    }
 
    function toggleDone() {
-      debugger
+      this.classList.toggle('done');
    }
 })()
 
