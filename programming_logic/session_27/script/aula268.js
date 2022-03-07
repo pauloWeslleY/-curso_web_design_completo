@@ -1,3 +1,8 @@
+/*
+   NOTE:
+   ?|> Aula 270 ==> Refatoração
+*/
+
 (function () {
    'use strict';
 
