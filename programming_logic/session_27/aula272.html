@@ -25,18 +25,30 @@
 
       <div class="container">
          <div class="row">
-            <div class="input-group mb-md-3">
-               <input type="text" class="form-control" id="inputTask" />
-               <button id="btn" class="btn btn-outline-success">
-                  Register Task
-               </button>
-            </div>
-            <hr />
-            <ul class="list-group col-md-6">
-               <li class="list-group-item">HTML5</li>
-               <li class="list-group-item">CSS3</li>
-               <li class="list-group-item">JavaScript</li>
-            </ul>
+            <form action="#">
+               <div class="mb-3">
+                  <textarea class="form-control" cols="50" rows="10" readonly>
+lorem. Vero dolores erat amet dolore. At sed sit ipsum.
+                  </textarea>
+               </div>
+               <div class="mb-3">
+                  <label>
+                     <input
+                        id="check"
+                        class="form-check-input"
+                        type="checkbox"
+                        checked
+                     />
+                     I have read and accept the terms of this agreement
+                  </label>
+                  <input
+                     id="button"
+                     class="btn btn-outline-info btn-sm"
+                     type="submit"
+                     value="Accept"
+                  />
+               </div>
+            </form>
          </div>
       </div>
 
@@ -52,6 +64,6 @@
          crossorigin="anonymous"
       ></script>
 
-      <script src="script/aula273.js"></script>
+      <script src="script/aula271.js"></script>
    </body>
 </html>
