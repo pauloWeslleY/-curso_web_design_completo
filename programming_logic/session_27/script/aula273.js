@@ -17,7 +17,7 @@
    });
 
    for (let i = 0; i < lis.length; i++) {
-      lis[i].addEventListener('click', toggleDone);
+      addEvent(lis[i]);
    }
 
    function addTask() {
@@ -31,6 +31,10 @@
       inputTask.focus();
 
       addEvent(li);
+   }
+
+   function addEvent(li) {
+      li.addEventListener('click', toggleDone);
    }
 
    function toggleDone() {
