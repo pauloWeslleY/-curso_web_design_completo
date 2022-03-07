@@ -18,9 +18,16 @@
 
    ul.addEventListener('click', function (e) {
       if (e.target.nodeName === 'LI') {
-         toggleDone(e.target);
+         removeTask(e.target);
       }
    })
+
+   function removeTask(li) {
+      if (confirm(`Really want to delete ${li.textContent}?`)) {
+         console.log(li.parentNode);
+         li.parentNode.removeChild(li);
+      }
+   }
 
    function addTask() {
       let li = document.createElement('li');
@@ -31,10 +38,6 @@
 
       inputTask.value = "";
       inputTask.focus();
-   }
-
-   function toggleDone(li) {
-      li.classList.toggle('done');
    }
 })()
 
