@@ -21,9 +21,6 @@
    }
 
    function addTask() {
-      // let task = `<li class="list-group-item">${inputTask.value}</li>`;
-      // ul.innerHTML += task;
-
       let li = document.createElement('li');
       li.classList.add('list-group-item');
       let text = document.createTextNode(inputTask.value);
@@ -32,6 +29,8 @@
 
       inputTask.value = "";
       inputTask.focus();
+
+      addEvent(li);
    }
 
    function toggleDone() {
