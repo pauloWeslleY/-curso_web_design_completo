@@ -16,9 +16,11 @@
       };
    });
 
-   for (let i = 0; i < lis.length; i++) {
-      addEvent(lis[i]);
-   }
+   ul.addEventListener('click', function (e) {
+      if (e.target.nodeName === 'LI') {
+         toggleDone(e.target);
+      }
+   })
 
    function addTask() {
       let li = document.createElement('li');
@@ -29,16 +31,10 @@
 
       inputTask.value = "";
       inputTask.focus();
-
-      addEvent(li);
    }
 
-   function addEvent(li) {
-      li.addEventListener('click', toggleDone);
-   }
-
-   function toggleDone() {
-      this.classList.toggle('done');
+   function toggleDone(li) {
+      li.classList.toggle('done');
    }
 })()
 
