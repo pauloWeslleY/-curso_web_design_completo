@@ -6,7 +6,7 @@ console.log(testOne.replace('m', 'M'));
 // line
 console.log('|>--------------------------------------------');
 /*
-   ? indexOf
+   ? indexOf(), valueOf(), slice(), split(), indexOf(), lastIndexOf()
 */
 
 console.log(testOne.indexOf(''));
