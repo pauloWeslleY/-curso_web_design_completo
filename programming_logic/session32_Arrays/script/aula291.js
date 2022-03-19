@@ -30,3 +30,17 @@ let posisitonStr1 = arr.indexOf(20, 5);
 console.log(posisitonStr1, 'posisitonStr1');
 let posisitonStr2 = arr.lastIndexOf(20, 5);
 console.log(posisitonStr2, 'posisitonStr2');
+
+console.log(isNumber);
+isNumber = isNumber.map(function (isEl, isInd, arr) {
+   return isEl * isInd;
+});
+console.log(isNumber);
+
+let arr2 = arr.concat(isNumber, 'Hello', 'WorldCup', 2015);
+console.log(arr2);
+
+let isJoin = arr2.join(' == ');
+let isJoin2 = arr2.toString();
+console.log(isJoin);
+console.log(isJoin2);
