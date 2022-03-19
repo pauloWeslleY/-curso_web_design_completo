@@ -7,10 +7,10 @@
 
 let arr = ['1', 20, 3, 4, 5, 'hello', 20, '30'];
 
-let thatNumber = arr.every(function (el) {
+let isEvery = arr.every(function (el) {
    return typeof el === 'number';
 });
-console.log(thatNumber);
+console.log(isEvery);
 
 let isBigEnough = arr.some(function (element) {
    return typeof element === 'number';
