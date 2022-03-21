@@ -84,3 +84,15 @@ console.log(isArr);
 let isArr2 = [10, 20, 30];
 isArr2.reverse();
 console.log(isArr2);
+
+/*
+   ? |> Aula 295 Métodos part5
+*/
+
+console.log(arr2.slice(2, 5));
+
+console.log('|>----------------------<|');
+console.log(arr2);
+let arr3 = arr2.splice(2, 3, 'lemon', 'orange');
+console.log(arr2);
+console.log(arr3);
