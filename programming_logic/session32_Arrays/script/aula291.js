@@ -63,3 +63,24 @@ console.log(arr);
 
 arr.unshift(true, false, 'unshift');
 console.log(arr);
+
+/*
+   ! |> Aula 294 Métodos part4
+*/
+
+isNumber.shift();
+let isCalc = isNumber.reduce(function (previous, current, iNdex) {
+   console.log('previous', previous, '| current', current, '| iNdex', iNdex );
+   return previous + current + iNdex;
+}, 1);
+console.log(isNumber);
+console.log(isCalc);
+
+let isArr = ['1', '2', '3', '4', '5'].reduceRight((isInitial, isCurent) => {
+   return isInitial + isCurent;
+});
+console.log(isArr);
+
+let isArr2 = [10, 20, 30];
+isArr2.reverse();
+console.log(isArr2);
