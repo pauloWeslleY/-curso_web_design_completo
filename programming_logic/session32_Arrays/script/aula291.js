@@ -41,7 +41,25 @@ console.log(isNumber);
 let arr2 = arr.concat(isNumber, 'Hello', 'WorldCup', 2015);
 console.log(arr2);
 
-let isJoin = arr2.join(' == ');
-let isJoin2 = arr2.toString();
+let isJoin = arr2.join(' => ');
 console.log(isJoin);
+let isJoin2 = arr2.toString();
 console.log(isJoin2);
+
+/*
+   ! |> Aula 293 Métodos part3
+*/
+
+arr.push('new', 'Item');
+console.log(arr);
+
+let lastItem = arr.pop();
+console.log(lastItem);
+console.log(arr);
+
+let firstItem = arr.shift();
+console.log(typeof firstItem);
+console.log(arr);
+
+arr.unshift(true, false, 'unshift');
+console.log(arr);
