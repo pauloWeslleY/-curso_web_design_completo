@@ -1,7 +1,8 @@
 /*
    !|> Aula 291 ==> About Arrays and Props
 
-   ? length, every(), filter(), forEach(), indexOf(), lastIndexOf(), map(), some(), concat(), join(), pop(), push(), reduce() e reduceRight(), reverse(), shift(), slice(), splice(), unshift(), toString()
+   ? length, every(), filter(), forEach(), indexOf(), lastIndexOf(), map(), some(), concat(), join(), pop(), push(), reduce()
+   ? e reduceRight(), reverse(), shift(), slice(), splice(), unshift(), toString()
 
 */
 
