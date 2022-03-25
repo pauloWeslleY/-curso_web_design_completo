@@ -27,9 +27,11 @@ console.log('<== <= === >= ==>');
       var tds = lineStudents.querySelectorAll('td');
       var notes = recoveryNumbers(tds);
 
-      var haveZero = notes.some(function (isNote) {
-         return isNote === 0;
-      });
+      // var haveZero = notes.some(function (isNote) {
+      //    return isNote === 0;
+      // });
+      // ?New Feature
+      var haveZero = notes.some(isNote => isNote === 0);
       var messages = haveZero ? 'reproved' : calcAverage.apply(this, notes);
       lineStudents.querySelector('.students-m').textContent = messages;
       x++;
