@@ -1,33 +1,18 @@
-/*
-   ! Aula 306 |> Temporizadores
-   setTimeout(fn, ms),
-   setInterval(fn, ms),
-   claerTimeout(id),
-   clearInterval(id),
-*/
+(() => {
+   let banner = document.querySelector('.banner');
+   let btnBanner = document.querySelector('.close__banner');
 
-let n = 0;
+   let isIntervalHide = null;
 
-const isSome = () => {
-   console.log('n', ++n);
-   if (n >= 10) {
-      clearInterval(isInteval);
+   const showBanner = () => {
+      banner.style.display = 'block';
+      isIntervalHide = setTimeout(closeBanner, 3000);
    }
-}
-
-let isTimeout = setTimeout(isSome, 1000);
-alert('isTimeout', isTimeout);
-let isInteval = setInterval(isSome, 1000);
-console.log('isInteval', isInteval);
-
-let isStr = '';
-let isDoc = document.querySelector("div");
-let isTimeoutTest = setTimeout(() => {
-   for (let i = 0; i < 1000; i++) {
-      // isCapture += `i: ${i} --`;
-      isStr += 'i: ' + i + ' -- YOU WRONG!';
-      isDoc.textContent += isStr;
+   const closeBanner = () => {
+      btnBanner.removeEventListener('click', closeBanner);
+      banner.parentNode.removeChild(banner);
+      clearTimeout(isIntervalHide);
    }
-}, 3000);
-
-
+   btnBanner.addEventListener('click', closeBanner);
+   setTimeout(showBanner, 3000);
+})();
