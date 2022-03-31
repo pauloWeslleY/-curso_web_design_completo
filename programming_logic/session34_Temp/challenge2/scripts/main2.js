@@ -4,21 +4,34 @@
    let stop = document.querySelector('#stop');
    let pause = document.querySelector('#pause');
 
+   let isInterval = null;
    let timeStampInitial = 0;
+   let isClickPause = 0;
+   let running = false;
+   let runTime = 0;
 
-   const isInit = () => {
+   const isInitial = () => {
       timeStampInitial = Date.now();
       initialStopWatch();
+      running = true;
    }
    const isPause = () => {
-
+      if (running) {
+         clearInterval(isInterval);
+         isClickPause = Date.now();
+         runTime += (isClickPause - timeStampInitial);
+         running = false;
+      } else {
+         timeStampInitial = Date.now();
+         initialStopWatch(runTime);
+         running = true;
+      }
    }
    const isStop = () => {
 
    }
-
    const initialStopWatch = () => {
-      setInterval(() => {
+      isInterval = setInterval(() => {
          let timeStampNow = Date.now();
          let isDiferent = timeStampNow - timeStampInitial;
          stopWatch.value = formatIsTimeStamp(isDiferent);
@@ -31,7 +44,6 @@
          ms = 59000 => 59:000
          ms = 61500 => 1:1:500
       */
-
       if (timeStamp < 1000) {
          return timeStamp;
       } else if (timeStamp < 60000) {
@@ -49,7 +61,7 @@
       }
    }
 
-   init.addEventListener('click', isInit);
+   init.addEventListener('click', isInitial);
    pause.addEventListener('click', isPause);
    stop.addEventListener('click', isStop);
 
