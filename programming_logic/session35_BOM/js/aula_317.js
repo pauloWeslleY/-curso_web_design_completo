@@ -49,4 +49,12 @@
    *  open(), close(),
    *  scrollTo(x,y), scrollTo(dx, dy),
    *  print()
+
+   fixme ==> BOM --> Event
+   ? load
+   ? error
+   ? Resize
+   ? scroll
+   ? unload
+   ? beforeUnload
 */
