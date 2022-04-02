@@ -6,14 +6,14 @@
    * pageXOffset / pageYOffset
    * screenX / screenY
 
-   fixme ==> BOM --> Objeto History
+   fixme ==> BOM --> Object History
    ! History
    * .length,
    * .go(),
    * .back(),
    * .forward()
 
-   fixme ==> BOM --> Objeto Location
+   fixme ==> BOM --> Object Location
    ! Location
    * .hash,
    * .host,
@@ -28,7 +28,7 @@
    *  .reload(),
    *  .replace(url)
 
-   fixme ==> BOM --> Objeto Navigator
+   fixme ==> BOM --> Object Navigator
    ! Navigator
    *  .appName,
    *  .appVersion,
@@ -38,9 +38,15 @@
    *  .language
    *  .mimeTypes
    *  .plugins
-   fixme ==> BOM --> Objeto Screen
+
+   fixme ==> BOM --> Object Screen
    * screen
    *  .availableWidth / availableHeight
    *  .width / height
 
+   fixme ==> BOM --> Method
+   *  alert(), confirm(), prompt(),
+   *  open(), close(),
+   *  scrollTo(x,y), scrollTo(dx, dy),
+   *  print()
 */
