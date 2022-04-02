@@ -17,24 +17,25 @@
    }
    const isPause = () => {
       if (running) {
+         running = false;
          clearInterval(isInterval);
          isClickPause = Date.now();
          runTime += (isClickPause - timeStampInitial);
-         running = false;
       } else {
+         running = true;
          timeStampInitial = Date.now();
          initialStopWatch(runTime);
-         running = true;
       }
    }
    const isStop = () => {
 
    }
-   const initialStopWatch = () => {
+   const initialStopWatch = (timeRunning) => {
+      let _isTime = timeRunning || 0;
       isInterval = setInterval(() => {
          let timeStampNow = Date.now();
          let isDiferent = timeStampNow - timeStampInitial;
-         stopWatch.value = formatIsTimeStamp(isDiferent);
+         stopWatch.value = formatIsTimeStamp(isDiferent + _isTime);
       }, 100);
    }
    const formatIsTimeStamp = (timeStamp) => {
