@@ -19,15 +19,14 @@
    const isPause = () => {
       if (!stopWatch.value);
       if (isRunning) {
-         isRunning = false;
          clearInterval(isInterval);
          isClickPause = Date.now();
          isRunTime += (isClickPause - isTimeStampInitial);
       } else {
-         isRunning = true;
          isTimeStampInitial = Date.now();
          initialStopWatch(isRunTime);
       }
+      isRunning = !isRunning;
    }
    const isStop = () => {
       isClickPause = 0;
@@ -46,26 +45,19 @@
       }, 100);
    }
    const formatIsTimeStamp = (timeStamp) => {
-      /*
-         ms = 900 => 900
-         ms = 1500 => 1:500
-         ms = 59000 => 59:000
-         ms = 61500 => 1:1:500
-      */
+      const ONE_MINUTES = 60 * 1000;
+
       if (timeStamp < 1000) {
          return timeStamp;
-      } else if (timeStamp < 60000) {
+      } else if (timeStamp < ONE_MINUTES) {
          let second = timeStamp / 1000;
          second = parseInt(second);
          let hundredth = timeStamp - (second * 1000);
          return `${second}:${hundredth}`;
       } else {
-         let isMinutes = timeStamp / (60000);
+         let isMinutes = timeStamp / (ONE_MINUTES);
          isMinutes = parseInt(isMinutes); // 1minute
-         let second = timeStamp / 1000 - (isMinutes * 60); // 61.5 = 1.5
-         second = parseInt(second); // 1
-         let hundredth = timeStamp - (second * 1000) - (isMinutes * 60 * 1000);
-         return `${isMinutes}:${second}:${hundredth}`;
+         return `${isMinutes}:${formatIsTimeStamp(timeStamp - isMinutes * ONE_MINUTES)}`;
       }
    }
 
