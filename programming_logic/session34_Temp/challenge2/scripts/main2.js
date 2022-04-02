@@ -5,41 +5,43 @@
    let pause = document.querySelector('#pause');
 
    let isInterval = null;
-   let timeStampInitial = 0;
+   let isTimeStampInitial = 0;
    let isClickPause = 0;
-   let running = false;
-   let runTime = 0;
+   let isRunning = false;
+   let isRunTime = 0;
 
    const isInitial = () => {
-      timeStampInitial = Date.now();
+      if (isRunning) return;
+      isTimeStampInitial = Date.now();
       initialStopWatch();
-      running = true;
+      isRunning = true;
    }
    const isPause = () => {
-      if (running) {
-         running = false;
+      if (!stopWatch.value);
+      if (isRunning) {
+         isRunning = false;
          clearInterval(isInterval);
          isClickPause = Date.now();
-         runTime += (isClickPause - timeStampInitial);
+         isRunTime += (isClickPause - isTimeStampInitial);
       } else {
-         running = true;
-         timeStampInitial = Date.now();
-         initialStopWatch(runTime);
+         isRunning = true;
+         isTimeStampInitial = Date.now();
+         initialStopWatch(isRunTime);
       }
    }
    const isStop = () => {
       isClickPause = 0;
-      timeStampInitial = 0;
-      runTime = 0;
-      running = false;
+      isTimeStampInitial = 0;
+      isRunTime = 0;
+      isRunning = false;
       clearInterval(isInterval);
       stopWatch.value = '';
    }
-   const initialStopWatch = (timeRunning) => {
-      let _isTime = timeRunning || 0;
+   const initialStopWatch = (timeisRunning) => {
+      let _isTime = timeisRunning || 0;
       isInterval = setInterval(() => {
          let timeStampNow = Date.now();
-         let isDiferent = timeStampNow - timeStampInitial;
+         let isDiferent = timeStampNow - isTimeStampInitial;
          stopWatch.value = formatIsTimeStamp(isDiferent + _isTime);
       }, 100);
    }
