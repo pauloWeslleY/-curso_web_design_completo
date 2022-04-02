@@ -12,6 +12,7 @@
 
    const isInitial = () => {
       if (isRunning) return;
+      isStop();
       isTimeStampInitial = Date.now();
       initialStopWatch();
       isRunning = true;
@@ -44,20 +45,20 @@
          stopWatch.value = formatIsTimeStamp(isDiferent + _isTime);
       }, 100);
    }
-   const formatIsTimeStamp = (timeStamp) => {
+   const formatIsTimeStamp = (isMilliSecond) => {
       const ONE_MINUTES = 60 * 1000;
 
-      if (timeStamp < 1000) {
-         return timeStamp;
-      } else if (timeStamp < ONE_MINUTES) {
-         let second = timeStamp / 1000;
-         second = parseInt(second);
-         let hundredth = timeStamp - (second * 1000);
-         return `${second}:${hundredth}`;
+      if (isMilliSecond < 1000) {
+         return isMilliSecond;
+      } else if (isMilliSecond < ONE_MINUTES) {
+         let isSecond = isMilliSecond / 1000;
+         isSecond = parseInt(isSecond);
+         let isHundredth = isMilliSecond - (isSecond * 1000);
+         return `${isSecond}:${isHundredth}`;
       } else {
-         let isMinutes = timeStamp / (ONE_MINUTES);
+         let isMinutes = isMilliSecond / (ONE_MINUTES);
          isMinutes = parseInt(isMinutes); // 1minute
-         return `${isMinutes}:${formatIsTimeStamp(timeStamp - isMinutes * ONE_MINUTES)}`;
+         return `${isMinutes}:${formatIsTimeStamp(isMilliSecond - isMinutes * ONE_MINUTES)}`;
       }
    }
 
