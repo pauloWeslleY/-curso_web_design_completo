@@ -28,7 +28,12 @@
       }
    }
    const isStop = () => {
-
+      isClickPause = 0;
+      timeStampInitial = 0;
+      runTime = 0;
+      running = false;
+      clearInterval(isInterval);
+      stopWatch.value = '';
    }
    const initialStopWatch = (timeRunning) => {
       let _isTime = timeRunning || 0;
