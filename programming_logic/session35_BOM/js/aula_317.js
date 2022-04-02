@@ -7,14 +7,14 @@
    * screenX / screenY
 
    fixme ==> BOM --> Objeto History
-   * History
+   ! History
    * .length,
    * .go(),
    * .back(),
    * .forward()
 
    fixme ==> BOM --> Objeto Location
-   * Location
+   ! Location
    * .hash,
    * .host,
    * .hostname,
@@ -29,7 +29,7 @@
    *  .replace(url)
 
    fixme ==> BOM --> Objeto Navigator
-   * Navigator
+   ! Navigator
    *  .appName,
    *  .appVersion,
    *  .userAgent
