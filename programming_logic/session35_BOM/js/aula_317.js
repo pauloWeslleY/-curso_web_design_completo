@@ -58,3 +58,33 @@
    ? unload
    ? beforeUnload
 */
+// fixme AULA 316
+// line
+
+window.addEventListener('load', () => {
+   console.log('load actived!');
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+   console.log('DOMContentLoaded actived');
+});
+
+window.addEventListener('resize', e => {
+   // console.log('resize actived');
+   // console.log(e);
+});
+
+window.addEventListener('scroll', e => {
+   // console.log('scroll actived!');
+   // console.log(e);
+   // console.log(`scroll Y, ${pageYOffset}`);
+});
+
+window.addEventListener('unload', () => {
+   console.log('unload actived!');
+   // debugger;
+});
+window.addEventListener('beforeunload', () => {
+   console.log('beforeunload actived');
+   // debugger;
+});
