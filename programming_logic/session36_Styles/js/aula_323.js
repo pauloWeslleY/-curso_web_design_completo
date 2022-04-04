@@ -22,11 +22,12 @@
       let isQuantity = isPosition.length;
       while (isQuantity) {
          isQuantity--;
-         if (isPosition[isQuantity] < 0) {
+         if (isPosition[isQuantity] < innerHeight / 2) {
             return isLinks[isQuantity];
          }
       }
       return isLinks[0];
    }
+   isMenuDestach();
    window.addEventListener('scroll', isMenuDestach);
 })();
