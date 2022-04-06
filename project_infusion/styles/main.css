@@ -1,10 +1,21 @@
+/* fixme Root --> Colors */
+:root {
+   --color-white: #fff;
+   --color-gray: #242c2c;
+   --color-gray-light: #586165;
+   --color-green-light: #63c6ae;
+   --color-gray-rgb: rgba(255, 255, 255, 0.2);
+}
+
+/* ! Style Default */
 body {
    margin: 0;
    font-family: "Open Sans", sans-serif;
 }
 
+/* ! Header Nav */
 .header {
-   background: #fff;
+   background: var(--color-white);
    width: 100%;
 }
 .header__nav {
@@ -16,14 +27,14 @@ body {
 }
 .header__nav li {
    list-style-type: none;
-   background: #242c2c;
+   background: var(--color-gray);
    padding: 1.562rem 0;
    text-align: center;
-   border-bottom: 0.0625rem dotted rgba(255, 255, 255, 0.2);
+   border-bottom: 0.0625rem dotted var(--color-gray-rgb);
 }
 .header__nav a {
    text-transform: uppercase;
-   color: #586165;
+   color: var(--color-gray-light);
    font-size: 0.875rem;
    font-weight: 600;
    text-decoration: none;
@@ -32,7 +43,7 @@ body {
 }
 .logo_text {
    text-transform: uppercase;
-   background-color: #63c6ae;
+   background-color: var(--color-green-light);
    font-size: 1.5rem;
    padding: 1.25rem;
    margin: 0;
@@ -40,5 +51,5 @@ body {
    float: left;
    text-decoration: none;
    font-weight: bold;
-   color: #fff;
+   color: var(--color-white);
 }
