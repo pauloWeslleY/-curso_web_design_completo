@@ -1,3 +1,8 @@
+/*
+
+   ? Mobile First
+
+*/
 /* fixme Root --> Colors */
 :root {
    --color-white: #fff;
@@ -28,16 +33,21 @@ body {
 .header__nav li {
    list-style-type: none;
    background: var(--color-gray);
-   padding: 1.562rem 0;
    text-align: center;
    border-bottom: 0.0625rem dotted var(--color-gray-rgb);
 }
 .header__nav a {
+   text-decoration: none;
    text-transform: uppercase;
    color: var(--color-gray-light);
    font-size: 0.875rem;
    font-weight: 600;
-   text-decoration: none;
+   display: block;
+   padding: 1.562rem 0;
+   transition: 0.8s ease;
+}
+.header__nav a:hover {
+   color: var(--color-green-light);
 }
 .header__btn_menu {
 }
