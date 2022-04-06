@@ -75,12 +75,17 @@ img {
    height: 80vh;
    padding: 2.5rem 1.25rem;
    text-align: center;
-   background-image: url(../assets/01.jpg);
-   background-size: cover;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
+   background: linear-gradient(45deg, var(--color-white) 50%, transparent 50%)
+         left calc(50% + 1.25rem) bottom no-repeat,
+      linear-gradient(-45deg, var(--color-white) 50%, transparent 50%) left
+         calc(50% - 1.25rem) bottom no-repeat,
+      url(../assets/01.jpg);
+   background-size: 2.5rem 2.5rem, 2.5rem 2.5rem, cover;
 }
 
 .hero__title {
