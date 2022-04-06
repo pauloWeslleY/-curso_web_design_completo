@@ -154,6 +154,20 @@ img {
    margin-top: 2.5rem;
 }
 
+.cards__items:hover {
+   outline: 5px solid var(--color-green-light);
+   outline-offset: -0.31rem;
+}
+
+.cards__items:hover .cards__avatar img {
+   transform: translateY(-50%);
+}
+
+.cards__items:hover .cards__title,
+.cards__items:hover .cards__subtitle {
+   color: var(--color-green-light);
+}
+
 .cards__images {
    width: 100%;
 }
@@ -174,6 +188,7 @@ img {
 .cards__title {
    color: var(--color-gray-bright);
    font-size: 1.31rem;
+   font-weight: normal;
 }
 
 .cards__subtitle {
