@@ -3,28 +3,51 @@
    ? Mobile First
 
 */
-/* fixme Root --> Colors */
+/*
+   ========================= ==>
+   fixme |> Root: --> Color
+   <== =========================
+*/
 :root {
    --color-white: #fff;
+   --color-white-lighten: #dbe1e7;
    --color-gray: #242c2c;
    --color-gray-light: #586165;
+   --color-gray-bright: #737c85;
+   --color-gray-lighten: #929da5;
    --color-green-light: #63c6ae;
    --color-gray-rgb: rgba(255, 255, 255, 0.2);
    --color-black-rgb: rgba(0, 0, 0, 0.2);
    --color-gray-rgba-light: rgba(255, 255, 255, 0.3);
 }
 
-/* ! Style Default */
+/*
+   ========================= ==>
+   ! |> Style Default
+   <== =========================
+*/
 body {
    margin: 0;
    font-family: "Open Sans", sans-serif;
+   line-height: 1.5;
 }
 
 img {
    max-width: 100%;
 }
 
-/* ! Header Nav */
+.container {
+   margin-right: auto;
+   margin-left: auto;
+   padding-right: 1em;
+   padding-left: 1em;
+}
+
+/*
+   ========================= ==>
+   ! |> Header --> Navigation
+   <== =========================
+*/
 .header {
    background: var(--color-white);
    width: 100%;
@@ -70,7 +93,11 @@ img {
    color: var(--color-white);
 }
 
-/* ! Section Hero */
+/*
+   ========================= ==>
+   ! |> Section Hero
+   <== =========================
+*/
 .hero {
    height: 80vh;
    padding: 2.5rem 1.25rem;
@@ -115,4 +142,41 @@ img {
    text-transform: uppercase;
    font-size: 1rem;
    font-weight: 600;
+}
+
+/*
+   ========================= ==>
+   ! |> Section Cards
+   <== =========================
+*/
+
+.cards {
+   margin-top: 2.5rem;
+}
+
+.cards__images {
+   width: 100%;
+}
+
+.cards__avatar {
+   margin: -3.43rem auto;
+   width: 5.5rem;
+   height: 5.5rem;
+   overflow: hidden;
+}
+
+.cards__content {
+   text-align: center;
+   padding: 2.5rem 1.56rem 0.625rem;
+   border-left: 1px solid var(--color-white-lighten);
+}
+
+.cards__title {
+   color: var(--color-gray-bright);
+   font-size: 1.31rem;
+}
+
+.cards__subtitle {
+   color: var(--color-gray-lighten);
+   font-size: 0.87rem;
 }
