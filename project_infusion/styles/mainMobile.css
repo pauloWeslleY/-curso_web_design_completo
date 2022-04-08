@@ -55,4 +55,14 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 1.87rem;
    }
+
+   /*
+      ========================= ==>
+      ! |> Lastet Articles
+      <== =========================
+   */
+
+   .last__articles__thumbs {
+      grid-template-columns: repeat(6, 1fr);
+   }
 }
