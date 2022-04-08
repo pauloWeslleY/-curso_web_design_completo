@@ -14,7 +14,6 @@
 
    .header__nav {
       width: 75%;
-      /* max-width: 50rem; */
       float: left;
       clear: none;
       max-width: 800px;
@@ -31,5 +30,11 @@
 
    .header__nav a {
       background-color: var(--color-white);
+   }
+
+   .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.87rem;
    }
 }
