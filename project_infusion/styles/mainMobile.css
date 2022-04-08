@@ -1,0 +1,35 @@
+@media screen and (min-width: 1024px) {
+   .header {
+      position: fixed;
+   }
+
+   .logo_text {
+      width: 25%;
+      box-sizing: border-box;
+   }
+
+   .header__btn_menu {
+      display: none;
+   }
+
+   .header__nav {
+      width: 75%;
+      /* max-width: 50rem; */
+      float: left;
+      clear: none;
+      max-width: 800px;
+   }
+
+   .header__nav ul {
+      display: flex;
+      justify-content: space-around;
+   }
+
+   .header__nav li {
+      border-bottom: none;
+   }
+
+   .header__nav a {
+      background-color: var(--color-white);
+   }
+}
