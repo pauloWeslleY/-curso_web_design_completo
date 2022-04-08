@@ -14,11 +14,14 @@
    --color-gray: #242c2c;
    --color-gray-2: #e3e3e3;
    --color-gray-3: #455357;
+   --color-gray-4: #242a2c;
+   --color-gray-5: #454e51;
    --color-gray-dark: #586165;
    --color-gray-bright: #737c85;
    --color-gray-lighten: #929da5;
    --color-gray-light: #f8f9f9;
    --color-green-light: #63c6ae;
+   --color-green-darken: #48b9a1;
    --color-gray-rgb: rgba(255, 255, 255, 0.2);
    --color-black-rgb: rgba(0, 0, 0, 0.2);
    --color-gray-rgba-light: rgba(255, 255, 255, 0.3);
@@ -298,4 +301,57 @@ img {
 
 .slider__show figure {
    display: inline-block;
+}
+
+/*
+   ========================= ==>
+   ! |> Quote Section
+   <== =========================
+*/
+
+.quote__container {
+   background-color: var(--color-green-light);
+   padding: 3.12rem 0;
+   border-bottom: 0.75rem solid var(--color-green-darken);
+}
+
+.quote__slide_show h2 {
+   color: var(--color-white);
+   font-size: 1.875rem;
+   font-style: italic;
+   font-weight: normal;
+}
+
+.quote__slide_show figcaption {
+   color: var(--color-white);
+   font-size: 1.125rem;
+   text-align: center;
+}
+
+.no-js .quote__slide_show figure + figure {
+   margin-top: 5em;
+}
+
+/*
+   ========================= ==>
+   ! |> Footer
+   <== =========================
+*/
+
+.footer {
+   background-color: var(--color-gray-4);
+   padding: 3.125rem 0 15.625rem;
+   color: var(--color-gray-5);
+   font-size: 0.875rem;
+}
+
+.footer__links li {
+   list-style: none;
+}
+
+.footer__links a {
+   color: var(--color-gray-5);
+   display: inline-block;
+   font-weight: 600;
+   text-decoration: none;
 }
