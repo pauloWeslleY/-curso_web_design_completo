@@ -357,3 +357,7 @@ img {
    font-weight: 600;
    text-decoration: none;
 }
+
+.footer__title {
+   text-transform: uppercase;
+}

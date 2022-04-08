@@ -65,4 +65,18 @@
    .last__articles__thumbs {
       grid-template-columns: repeat(6, 1fr);
    }
+
+   /*
+      ========================= ==>
+      ! |> Footer
+      <== =========================
+   */
+
+   .footer .container {
+      display: flex;
+   }
+
+   .footer .container > * {
+      margin: 1.5em;
+   }
 }
