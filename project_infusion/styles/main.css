@@ -278,3 +278,24 @@ img {
    display: block;
    width: 100%;
 }
+
+/*
+   ========================= ==>
+   ! |> Section Slider
+   <== =========================
+*/
+
+.section__slider {
+   background-color: var(--color-gray);
+   padding: 7.81rem 0 6.25rem;
+   width: 100%;
+   overflow: auto;
+}
+
+.slider__show {
+   white-space: nowrap;
+}
+
+.slider__show figure {
+   display: inline-block;
+}
