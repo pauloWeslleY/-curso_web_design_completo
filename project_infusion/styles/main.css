@@ -123,6 +123,7 @@ img {
    text-decoration: none;
    font-weight: bold;
    color: var(--color-white);
+   text-align: right;
 }
 
 /*
