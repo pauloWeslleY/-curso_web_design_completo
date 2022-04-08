@@ -248,3 +248,33 @@ img {
    font-size: 0.875rem;
    word-spacing: 0.187rem;
 }
+
+/*
+   ========================= ==>
+   ! |> Lastet Articles
+   <== =========================
+*/
+
+.last__articles__title {
+   background: var(--color-green-light);
+   padding: 0.31rem 0;
+}
+
+.last__articles__title h2 {
+   font-size: 1.5rem;
+   color: var(--color-white);
+   text-transform: uppercase;
+   font-weight: 400;
+}
+
+.last__articles__thumbs {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+   grid-auto-rows: auto;
+   grid-gap: 0;
+}
+
+.last__articles__thumbs img {
+   display: block;
+   width: 100%;
+}
