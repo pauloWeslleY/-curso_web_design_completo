@@ -9,19 +9,19 @@
       <meta name="keywords" content="html5, tecnologia" />
 
       <!-- ? Font Awesome v5.2.0 -->
-      <!-- <link
+      <link
          rel="stylesheet"
          href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
          crossorigin="anonymous"
-      /> -->
+      />
       <!-- ? Font Awesome v6.1.1 -->
-      <link
+      <!-- <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
          crossorigin="anonymous"
-      />
+      /> -->
       <!-- Fonts -->
       <link
          href="http://fonts.googleapis.com/css?family=Sintony:400,700"
@@ -42,7 +42,10 @@
       <header class="header">
          <a href="index.html" class="logo_text">Infusion</a>
 
-         <button style="display: none" class="header__btn_menu">Menu</button>
+         <button style="display: none" class="header__btn_menu">
+            <i class="fas fa-bars fa-2x"></i>
+            <span class="sr-only">Menu</span>
+         </button>
 
          <nav class="header__nav">
             <ul>
@@ -292,6 +295,7 @@
          </div>
       </footer>
 
+      <script src="scripts/menu.js"></script>
       <script src="scripts/main.js"></script>
    </body>
 </html>

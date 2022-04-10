@@ -77,6 +77,24 @@ img {
 
 /*
    ========================= ==>
+   ! |> Header --> Menu
+   <== =========================
+*/
+.js .header {
+   position: fixed;
+   width: 100%;
+}
+
+.header__btn_menu {
+   float: right;
+   margin: 1.5em;
+   background: transparent;
+   border: none;
+   font-size: 0.875rem;
+}
+
+/*
+   ========================= ==>
    ! |> Header --> Navigation
    <== =========================
 */
