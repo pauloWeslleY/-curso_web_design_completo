@@ -14,4 +14,10 @@
       isBtnPrev: '.prev',
       isBtnNext: '.next'
    });
+   let isQuotesCarousel = new Carousel({
+      container: '.quote__slide_show',
+      items: 'figure',
+      isBtnPrev: '.prev',
+      isBtnNext: '.next'
+   });
 })()

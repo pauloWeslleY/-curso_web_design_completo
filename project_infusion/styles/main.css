@@ -90,7 +90,6 @@ img {
 .js .section__slider {
    overflow: hidden;
    color: var(--color-white);
-   font-weight: 400;
 }
 .js .section__slider .slider__show {
    position: relative;
@@ -111,18 +110,45 @@ img {
    position: static;
 }
 .js .section__slider .prev,
-.js .section__slider .next {
+.js .section__slider .next,
+.js .quote__slide_show .prev,
+.js .quote__slide_show .next {
    z-index: 3;
    position: absolute;
    top: 50%;
 }
-.js .section__slider .prev {
+.js .section__slider .prev,
+.js .quote__slide_show .prev {
    left: 0.625rem;
    cursor: pointer;
 }
-.js .section__slider .next {
+.js .section__slider .next,
+.js .quote__slide_show .next {
    right: 0.625rem;
    cursor: pointer;
+}
+.js .quote__slide_show {
+   position: relative;
+   width: 100%;
+   margin: auto;
+   max-width: 950px;
+   text-align: center;
+}
+.js .quote__slide_show figure {
+   display: none;
+}
+.js .quote__slide_show figure.show {
+   display: block;
+}
+.js .quote__slide_show .fas,
+.js .quote__slide_show .fas {
+   color: var(--color-white);
+}
+
+.js .quote__slide_show .fas:hover,
+.js .quote__slide_show .fas:hover {
+   color: var(--color-gray-dark);
+   transition: 0.9s;
 }
 
 /*
