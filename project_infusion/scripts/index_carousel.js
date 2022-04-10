@@ -34,7 +34,6 @@ function Carousel(config) {
       _this.items[0].classList.add('show');
       _this.isBtnNext.removeAttribute('style');
       _this.isBtnPrev.removeAttribute('style');
-
       isAddListen();
    }
    init();

@@ -74,36 +74,30 @@ img {
    background-color: var(--color-gray-3);
    color: var(--color-white);
 }
-
 /*
    ========================= ==>
    ! |> JS --> Class
    <== =========================
 */
-
 .js .header {
    position: fixed;
    width: 100%;
    z-index: 10;
 }
-
 .js .header__nav {
    transition: max-height 1s;
 }
-
 .js .section__slider {
    overflow: hidden;
    color: var(--color-white);
    font-weight: 400;
 }
-
 .js .section__slider .slider__show {
    position: relative;
    width: 100%;
    margin: auto;
    max-width: 950px;
 }
-
 .js .section__slider figure {
    opacity: 0;
    transition: 1s opacity;
@@ -112,12 +106,10 @@ img {
    top: 0;
    left: 0;
 }
-
 .js .section__slider figure.show {
    opacity: 1;
    position: static;
 }
-
 .js .section__slider .prev,
 .js .section__slider .next {
    z-index: 3;

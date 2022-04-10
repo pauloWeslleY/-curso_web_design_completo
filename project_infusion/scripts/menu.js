@@ -9,8 +9,6 @@ function MenuMobile (config){
    const isApplyStyle = (_isStyle) => {
       Object.keys(_isStyle).forEach(isStl => {
          _this.nav.style[isStl] = _isStyle[isStl];
-         // _this.nav.style.maxHeight = 'calc(100vh - 50px)';
-         // _this.nav.style.overflow = 'hidden';
       });
    }
    const isCloseMenu = () => {
