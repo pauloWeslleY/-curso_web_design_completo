@@ -144,13 +144,11 @@ img {
 .js .quote__slide_show .fas {
    color: var(--color-white);
 }
-
 .js .quote__slide_show .fas:hover,
 .js .quote__slide_show .fas:hover {
    color: var(--color-gray-dark);
    transition: 0.9s;
 }
-
 /*
    ========================= ==>
    ! |> Header --> Button__Menu
