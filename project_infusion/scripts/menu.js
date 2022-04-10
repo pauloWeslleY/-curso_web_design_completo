@@ -30,6 +30,16 @@ function isMenuMobile (config){
    }
    this.btn.addEventListener('click', isOpenOrClose);
    isCloseMenu();
+   if (this.maxWidth) {
+      window.addEventListener('resize', e => {
+         if (window.innerWidth > _this.maxWidth) {
+            _this.nav.removeAttribute('style');
+            _isOpened = true;
+         } else if (!this.nav.getAttribute('style')) {
+            isCloseMenu();
+         }
+      })
+   }
    const isOpenMenu = () => {
       let _isTop = this.nav.getBoundingClientRect().top + 'px'
       let _isStyle = {

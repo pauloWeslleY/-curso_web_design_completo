@@ -9,6 +9,6 @@
    let isMenu = new isMenuMobile({
       container: '.header__nav',
       toggleBtn: '.header__btn_menu',
-      widthEnabled: 1014
+      widthEnabled: 1024
    })
 })()
