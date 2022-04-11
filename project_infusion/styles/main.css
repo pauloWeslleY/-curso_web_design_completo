@@ -390,6 +390,14 @@ img {
    display: inline-block;
 }
 
+.slider__show figure img {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 70%;
+   margin: 1.5rem;
+}
+
 /*
    ========================= ==>
    ! |> Quote Section
